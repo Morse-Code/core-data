@@ -48,48 +48,6 @@
                ReferencedContainer = "container:Moody.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "176699831B8338B100AC71A8"
-               BuildableName = "CoreDataHelpers.framework"
-               BlueprintName = "CoreDataHelpers"
-               ReferencedContainer = "container:Moody.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3E7CD9A61B11E1A20008FE1F"
-               BuildableName = "MoodyModel.framework"
-               BlueprintName = "MoodyModel"
-               ReferencedContainer = "container:Moody.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3E7CD9751B11E1050008FE1F"
-               BuildableName = "MoodySync.framework"
-               BlueprintName = "MoodySync"
-               ReferencedContainer = "container:Moody.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
