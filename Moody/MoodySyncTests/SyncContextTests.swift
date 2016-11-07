@@ -28,7 +28,7 @@ private class TestSyncContext: ContextOwnerType {
 
     let mainManagedObjectContext: NSManagedObjectContext
     let syncManagedObjectContext: NSManagedObjectContext
-    let syncGroup = dispatch_group_create()!
+    let syncGroup = dispatch_group_create()
     let didSetup = true
     var observerTokens: [NSObjectProtocol] = []
     func addObserverToken(token: NSObjectProtocol) {
@@ -92,7 +92,7 @@ class SyncContextTests: XCTestCase {
             // Wait for work to be done in order not to leak into the next test:
             context.syncGroup.spinUntilEmpty()
 
-            let group = dispatch_group_create()!
+            let group = dispatch_group_create()
             dispatch_group_enter(group)
             context.mainManagedObjectContext.performBlock {
                 dispatch_group_leave(group)
@@ -106,7 +106,7 @@ class SyncContextTests: XCTestCase {
     }
 
     func waitForManagedObjectContextsToBeDone() {
-        let group = dispatch_group_create()!
+        let group = dispatch_group_create()
         dispatch_group_enter(group)
         sut!.mainManagedObjectContext.performBlock {
             dispatch_group_leave(group)

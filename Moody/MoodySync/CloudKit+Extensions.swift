@@ -145,6 +145,7 @@ extension NSError {
         case .ZoneNotFound: return true
         case .LimitExceeded: return true
         case .UserDeletedZone: return true
+        default: return true
         }
     }
 

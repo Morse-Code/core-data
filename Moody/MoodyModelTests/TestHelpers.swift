@@ -66,8 +66,8 @@ extension NSPersistentStoreCoordinator {
 
     func addSQLiteTestStore() {
         let storeURL = NSURL(fileURLWithPath: NSTemporaryDirectory(), isDirectory: true).URLByAppendingPathComponent("moody-test")
-        if NSFileManager.defaultManager().fileExistsAtPath(storeURL.path!) {
-            try! destroyPersistentStoreAtURL(storeURL, withType: NSSQLiteStoreType, options: nil)
+        if NSFileManager.defaultManager().fileExistsAtPath(storeURL!.path!) {
+            try! destroyPersistentStoreAtURL(storeURL!, withType: NSSQLiteStoreType, options: nil)
         }
         try! addPersistentStoreWithType(NSSQLiteStoreType, configuration: nil, URL: storeURL, options: nil)
     }

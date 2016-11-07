@@ -46,7 +46,7 @@ class IconGenerator {
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
 
-        let pngData = UIImagePNGRepresentation(image)
+        let pngData = UIImagePNGRepresentation(image!)
         let url = iconFileURLWithName("AppIcon-\(width)@\(scale)x")
         try! pngData?.writeToURL(url, options: NSDataWritingOptions())
         print(url.path!)
@@ -54,7 +54,7 @@ class IconGenerator {
 
     func iconFileURLWithName(name: String) -> NSURL {
         var url = NSURL(fileURLWithPath: NSHomeDirectory(), isDirectory: true)
-        url = url.URLByAppendingPathComponent(name)
-        return url.URLByAppendingPathExtension("png")
+        url = url.URLByAppendingPathComponent(name)!
+        return url.URLByAppendingPathExtension("png")!
     }
 }

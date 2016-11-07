@@ -99,7 +99,7 @@ extension ARGBPixel_t {
         let colorSpace = CGColorSpaceCreateWithName(kCGColorSpaceGenericRGBLinear)!
         let linear = CGColorCreate(colorSpace, [scale * CGFloat(r), scale * CGFloat(g), scale * CGFloat(b), scale * CGFloat(a)])
         let sRGB = CGColorSpaceCreateWithName(kCGColorSpaceSRGB)!
-        return CGColorCreateCopyByMatchingToColorSpace(sRGB, .RenderingIntentPerceptual, linear, nil)!
+        return CGColorCreateCopyByMatchingToColorSpace(sRGB, .RenderingIntentPerceptual, linear!, nil)!
     }
 }
 
